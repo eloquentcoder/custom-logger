@@ -9,7 +9,7 @@ class FailedLog extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['level', 'message', 'context', 'environment', 'sent'];
+    protected $fillable = ['level', 'message', 'context', 'environment', 'sent', 'project'];
 
     protected $casts = [
         'context' => 'array',

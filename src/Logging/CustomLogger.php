@@ -6,7 +6,7 @@ use EloquentCoder\LogSender\Http\LogSender as HttpLogSender;
 use Monolog\Handler\AbstractProcessingHandler;
 use Monolog\Logger;
 use Monolog\LogRecord;
-use Vendor\CustomLogger\Jobs\SendLogJob;
+use EloquentCoder\LogSender\Jobs\SendLogJob;
 
 class CustomLogger extends AbstractProcessingHandler
 {

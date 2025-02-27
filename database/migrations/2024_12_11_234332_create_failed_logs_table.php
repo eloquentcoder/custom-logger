@@ -11,6 +11,7 @@ return new class extends Migration {
             $table->id();
             $table->string('level');
             $table->text('message');
+            $table->text('project');
             $table->json('context')->nullable();
             $table->string('environment');
 

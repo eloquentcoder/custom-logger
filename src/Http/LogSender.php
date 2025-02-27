@@ -27,7 +27,8 @@ class LogSender
                 'level' => $logData['level'],
                 'message' => $logData['message'],
                 'context' => $logData['context'],
-                'environment' => $logData['environment']
+                'environment' => $logData['environment'],
+                'project' => $logData['project']
             ]);
         }
     }
