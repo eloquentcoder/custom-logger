@@ -1,18 +1,39 @@
 {
-    "name": "eloquent/log-sender",
-    "description": "An log sender that sends logs to the LogMonitor application",
+    "name": "eloquent-coder/log-sender",
+    "description": "A log sender that sends logs to the LogMonitor application",
+    "keywords": ["logging", "monitoring", "laravel"],
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Eloquent\\LogSender\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Patrick Obafemi",
             "email": "eloquentintech@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EloquentCoder\\LogSender\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EloquentCoder\\LogSender\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EloquentCoder\\LogSender\\LogSenderServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Vendor\CustomLogger\Jobs;
+namespace EloquentCoder\LogSender\Jobs;
 
-use Eloquent\LogSender\Http\LogSender as HttpLogSender;
+use EloquentCoder\LogSender\Http\LogSender as HttpLogSender;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Eloquent\LogSender\Http;
+namespace EloquentCoder\LogSender\Http;
 
-use Eloquent\LogSender\Models\FailedLog;
+use EloquentCoder\LogSender\Models\FailedLog;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Exception;

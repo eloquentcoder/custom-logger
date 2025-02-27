@@ -1,9 +1,9 @@
 <?php
 
-namespace Eloquent\LogSender\Console\Commands;
+namespace EloquentCoder\LogSender\Console\Commands;
 
-use Eloquent\LogSender\Http\LogSender;
-use Eloquent\LogSender\Models\FailedLog;
+use EloquentCoder\LogSender\Http\LogSender;
+use EloquentCoder\LogSender\Models\FailedLog;
 use Illuminate\Console\Command;
 
 class RetryFailedLogsCommand extends Command

@@ -1,18 +1,18 @@
 <?php
 
-namespace Vendor\CustomLogger;
+namespace EloquentCoder\LogSender;
 
-use Eloquent\LogSender\Console\Commands\RetryFailedLogsCommand;
-use Eloquent\LogSender\Models\FailedLog;
+use EloquentCoder\LogSender\Console\Commands\RetryFailedLogsCommand;
 use Illuminate\Support\ServiceProvider;
 
-class CustomLoggerServiceProvider extends ServiceProvider
+class LogSenderServiceProvider extends ServiceProvider
 {
     public function boot()
     {
+
         $this->publishes([
             __DIR__ . '/../config/customlogger.php' => config_path('customlogger.php'),
-        ], 'config');
+        ], 'log-sender');
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
@@ -27,7 +27,7 @@ class CustomLoggerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/customlogger.php', 'customlogger'
+            __DIR__ . '/../config/customlogger.php', 'log-sender'
         );
 
         $this->commands([

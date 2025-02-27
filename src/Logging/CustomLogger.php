@@ -1,8 +1,8 @@
 <?php
 
-namespace Eloquent\LogSender\Logging;
+namespace EloquentCoder\LogSender\Logging;
 
-use Eloquent\LogSender\Http\LogSender as HttpLogSender;
+use EloquentCoder\LogSender\Http\LogSender as HttpLogSender;
 use Monolog\Handler\AbstractProcessingHandler;
 use Monolog\Logger;
 use Monolog\LogRecord;
