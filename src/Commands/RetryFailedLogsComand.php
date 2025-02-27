@@ -1,6 +1,6 @@
 <?php
 
-namespace EloquentCoder\LogSender\Console\Commands;
+namespace EloquentCoder\LogSender\Commands;
 
 use EloquentCoder\LogSender\Http\LogSender;
 use EloquentCoder\LogSender\Models\FailedLog;

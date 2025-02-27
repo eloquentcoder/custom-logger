@@ -2,7 +2,7 @@
 
 namespace EloquentCoder\LogSender;
 
-use EloquentCoder\LogSender\Console\Commands\RetryFailedLogsCommand;
+use EloquentCoder\LogSender\Commands\RetryFailedLogsCommand;
 use Illuminate\Support\ServiceProvider;
 
 class LogSenderServiceProvider extends ServiceProvider
